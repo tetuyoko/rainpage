@@ -1,0 +1,28 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'RainPage'
+theme = "hugo-kiera"
+
+menu = "main"
+meta = "false"
+
+pygmentsCodeFences = true
+
+disqusShortname = "" #Disqus shortname
+googleAnalytics = "" #Google Analytics ID
+
+[author]
+    name = ""           #Author name
+    github = ""         #Github username
+    gitlab = ""         #Gitlab username
+    linkedin = ""       #LinkedIn username
+    facebook = ""       #Facebook username
+    twitter = ""        #Twitter username
+    instagram = ""      #Instagram username
+    stackoverflow = ""  #StackOverflow username
+    devto = ""          #Dev.to username
+
+[params]
+    tagline = "the tagline for this website"
+    customCSS = []  #Optional Customised CSS
+    disableDarkModeCSS = false # disables css style for users using dark-mode
