@@ -1,0 +1,33 @@
++++
+title = "login"
+menu = "login"
+weight = "20"
+meta = "false"
++++
+
+<section id="home">
+  <p>You need login</p>
+  <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+  <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>
+
+  <div class="hidden" id="gated-content">
+    <p>
+      You're seeing this content because you're currently
+      <strong>logged in</strong>.
+    </p>
+    <label>
+      Access token:
+      <pre id="ipt-access-token"></pre>
+    </label>
+    <label>
+      User profile:
+      <pre id="ipt-user-profile"></pre>
+    </label>
+
+    <label>
+      User profile Image:
+      <img src="" id="ipt-user-profile-image" width="200px">
+    </label>
+  </div>
+
+</section>

@@ -1,5 +1,6 @@
 let auth0 = null;
-const fetchAuthConfig = () => fetch("./js/auth_config.json");
+const fetchAuthConfig = () => fetch("/js/auth_config.json");
+console.log('hoge')
 
 const configureClient = async () => {
   const response = await fetchAuthConfig();
@@ -29,7 +30,9 @@ window.onload = async () => {
     console.log('authenticated')
   } else {
     console.log('unauthenticated')
-    //login();
+    if (window.location.pathname !== '/login/') {
+      window.location.href = '/login'
+    }
   }
 }
 
